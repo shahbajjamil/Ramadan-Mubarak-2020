@@ -126,3 +126,8 @@ li:nth-child(14) {
     transition-delay: 2.6s;
     color: #1cb843;
 }
+@media(max-width: 600px) {
+    .text li {
+        font-size: 20px;
+    }
+}
