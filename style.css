@@ -5,12 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    display: flex;
+    /* display: flex; */
     font-family: 'Poppins', sans-serif;
 }
-title {
+/* title {
     display: none;
-}
+} */
 
 body {
     height: 100vh;
@@ -42,9 +42,6 @@ body {
 .text {
    position: absolute;
    display: flex;
-   /* color:yellow; */
-   /* top: 40%;
-   right: 30%; */
    left:0;
    bottom:0;
    overflow: hidden;
@@ -59,6 +56,8 @@ body {
     }
 }
 .text li {
+    display: block;
+    float: left;
     list-style: none;
     font-size: 65px;
     letter-spacing: 8px;
@@ -126,8 +125,18 @@ li:nth-child(14) {
     transition-delay: 2.6s;
     color: #1cb843;
 }
+footer p {
+    position: absolute;
+    bottom:0;
+    display: block;
+    color: #fff;
+   
+}
 @media(max-width: 600px) {
     .text li {
         font-size: 20px;
+    }
+    footer p {
+        font-size:0.6em;
     }
 }
