@@ -1,13 +1,26 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+title {
+    display: none;
+}
+
+body {
     height: 100vh;
-    background-color: rgb(92,43,73);
+    background-color: #5c2b49;
     background-image: url(backimg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    z-index: -1;
 }
 .moon {
     position: absolute;
@@ -18,4 +31,98 @@ body {
     left: 10%;
     top: 5%;
     box-shadow: -20px 10px #fff;
+    opacity: 0;
+    animation: moon 11s 3.5s forwards;
+}
+@keyframes moon {
+    100%{
+        opacity: 1;
+    }
+}
+.text {
+   position: absolute;
+   display: flex;
+   /* color:yellow; */
+   /* top: 40%;
+   right: 30%; */
+   left:0;
+   bottom:0;
+   overflow: hidden;
+   padding: 10px;
+   opacity: 0;
+   margin: auto;
+   animation: ramadan 11s 1.5s forwards;
+}
+@keyframes ramadan {
+    100%{
+        opacity: 1;
+    }
+}
+.text li {
+    list-style: none;
+    font-size: 65px;
+    letter-spacing: 8px;
+    line-height: 150px;
+    color:white;
+    transition: 2s;
+    cursor: pointer;
+}
+.text:hover li {
+    transform: rotate(55deg) translateY(-100px);
+    opacity: 0;
+    filter: blur(30px);
+}
+.text:hover::after {
+    transform: scale(0.9);
+    transition-delay: 2.4s;
+    opacity: 0.8;
+}
+li:nth-child(1) {
+    transition-delay: 0s;
+}
+li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+li:nth-child(4) {
+    transition-delay: 0.6s;
+}
+li:nth-child(5) {
+    transition-delay: 0.8s;
+}
+li:nth-child(6) {
+    transition-delay: 1s;
+}
+li:nth-child(7) {
+    transition-delay: 1.2s;
+}
+li:nth-child(8) {
+    transition-delay: 1.4s;
+    color: #1cb843;
+}
+li:nth-child(9) {
+    transition-delay: 1.6s;
+    color: #1cb843;
+}
+li:nth-child(10) {
+    transition-delay: 1.8s;
+    color: #1cb843;
+}
+li:nth-child(11) {
+    transition-delay: 2s;
+    color: #1cb843;
+}
+li:nth-child(12) {
+    transition-delay: 2.2s;
+    color: #1cb843;
+}
+li:nth-child(13) {
+    transition-delay: 2.4s;
+    color: #1cb843;
+}
+li:nth-child(14) {
+    transition-delay: 2.6s;
+    color: #1cb843;
 }
