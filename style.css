@@ -21,6 +21,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
 .moon {
     position: absolute;
@@ -125,12 +128,20 @@ li:nth-child(14) {
     transition-delay: 2.6s;
     color: #1cb843;
 }
-footer p {
-    position: absolute;
+footer {
+    position: fixed;
     bottom:0;
-    display: block;
-    color: #fff;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-family: sans-serif;
+}
+footer p {
+    color: #fff; 
+}
+footer a {
+    text-decoration: none;
+    color: #9ee715;
 }
 @media(max-width: 700px) {
     .text li {
